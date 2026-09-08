@@ -60,8 +60,16 @@ h1{
         font-size : 24px;
     }
 
-    .content p{
-        font-size : 14px;
+    .content{
+        display: block;      /* stop side-by-side flex layout */
+        height: auto;        /* let it grow with content instead of cutting off */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .aboutme{
+        width: 100%;
+        margin: 0;
     }
 
     .aboutme h2{
@@ -72,21 +80,25 @@ h1{
         font-size : 14px;
     }
 
+    .content p{
+        font-size : 14px;
+    }
+
     .pics{
-        margin-right : 20px;
-        margin-top : 15px;
+        float: right;         /* this makes text wrap around it */
+        margin: 0 0 10px 10px;
     }
 
     .pics img{
-        display: inline;
-        height : 150px;
-        width : 150px;
+        height : 120px;
+        width : 120px;
     }
 
     .sections{
-        height : 120px;
+        height : auto;
         padding : 8px;
         gap : 8px;
+        flex-wrap: wrap;
     }
 
     .sections a{
