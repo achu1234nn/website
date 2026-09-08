@@ -78,6 +78,7 @@ h1{
     }
 
     .pics img{
+        display: inline;
         height : 150px;
         width : 150px;
     }
