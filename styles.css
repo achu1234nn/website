@@ -1,0 +1,94 @@
+h1{
+    text-align : center;
+}
+.content{
+    display : flex;
+    height : 650px;
+    width : 100%;
+    border : 2px solid black;
+}
+.content p{
+    font-size : 20px;
+}
+.aboutme{
+    width :40%;
+    margin-left : 10px;
+    margin-top : 10px;
+}
+.aboutme h2{
+    text-decoration: underline;
+}
+.pics{
+    margin-right : 130px;
+    margin-top :25px;
+    margin-left : auto;
+}
+.pics img{
+    height:600px;
+    Width : 600px;
+    border-radius : 50%;
+}
+.sections{
+    margin-top : 20px;
+    width :100%;
+    height :200px;
+    border : 2px solid black;
+    display : flex;
+    padding: 15px;      /* space between children and the .sections border */
+    gap: 15px;           /* space between the three child divs themselves */
+    box-sizing: border-box; /* so padding doesn't push height past 200px */
+}
+
+.projects, .thoughts, .themes{
+    flex: 1;             /* makes each one take equal width */
+    border: 1.9px solid black; /* just so you can SEE them for now */
+    border-radius: 10px; /* optional, just for aesthetics */
+    display: flex;       /* allows us to use flex properties on the children */
+    justify-content: center;  /* centers text inside each section */ 
+    align-items: center; /* centers content vertically */            
+}
+.sections a{
+    text-decoration : none;
+    color :black;
+    font-size : 30px;
+}
+
+
+
+@media (max-width: 680px) {
+    h1{
+        font-size : 24px;
+    }
+
+    .content p{
+        font-size : 14px;
+    }
+
+    .aboutme h2{
+        font-size : 18px;
+    }
+
+    .character-sheet strong{
+        font-size : 14px;
+    }
+
+    .pics{
+        margin-right : 20px;
+        margin-top : 15px;
+    }
+
+    .pics img{
+        height : 150px;
+        width : 150px;
+    }
+
+    .sections{
+        height : 120px;
+        padding : 8px;
+        gap : 8px;
+    }
+
+    .sections a{
+        font-size : 16px;
+    }
+}
